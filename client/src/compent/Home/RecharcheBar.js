@@ -42,7 +42,6 @@ const RecharcheBar = () => {
            {ReserchBar&&Product.filter((el)=>el.Name.toLocaleLowerCase().includes(ReserchBar.toLocaleLowerCase().trim())).map((el)=>
           <Link data-Aos="fade"  style={{  textDecoration: "none" ,color:"#1F2649"}}  to={`/Reserch/${el.Name}`}><Box className="flex ClickHover ">
                <Box data-Aos="fade"  className="mb-2 mt-2" >  
-                <img style={{width:"80px" , height:"50px"}} src={process.env.PUBLIC_URL +`/uploads/${el.Image}` }/>
                 </Box>
                 <Box data-Aos="fade"   className="mb-2 mt-2 pl-10 flex"> 
                 <p  data-Aos="fade-left"  style={{width:"150px"}} >{el.Name}</p>

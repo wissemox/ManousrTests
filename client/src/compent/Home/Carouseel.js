@@ -8,16 +8,13 @@ import {
 } from 'reactstrap';
 
 const items = [
+ 
   {
-    src: 'ImageBinsport.gif',
-  
-  },
-  {
-    src: 'ImageBinsport.gif',
+    src: 'Wallapaer.gif',
    
   },
   {
-    src: 'ImageBinsport.gif',
+    src: 'Respator.gif',
    
   }
 ];
@@ -60,7 +57,7 @@ const Example = ({TogelMenu}) => {
      
       </div>
         
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+      <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     );
   });

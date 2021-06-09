@@ -98,7 +98,7 @@ export default function RecipeReviewCard({el}) {
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
+        <CardContent className="mt-10">
           <Typography  paragraph>Decaription:</Typography>
           <Typography   paragraph>
           {el.Descraption}

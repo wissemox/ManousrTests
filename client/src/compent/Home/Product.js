@@ -22,7 +22,7 @@ const Product = () => {
     const Product = useSelector(state => state.ProductdALL.ProductAll)
     return (
         <div>
-            <div className="mt-10 mb-10 ml-4 font-semibold 	">
+            <div className="mt-10 mb-10 ml-14 font-semibold 	">
              <div style={{width:"100%"}} className="flex flex-wrap Resposive02	">
              {Product.map((el)=><ProductMap el={el}/>)}
          
@@ -33,15 +33,7 @@ const Product = () => {
             </div>
              
 
-            <div className="mt-10 mb-10  ml-25  font-semibold	">
-             <p>Ordinater</p>
-             <div className="flex flex-wrap	">
-             {Product.filter((catgorie)=>catgorie.Catgory=="Ordinateur").map((el)=><ProductMap el={el}/>)}
-         
-             </div>
-             
-             
-            </div>
+           
 
             <div className="mt-10 mb-10  ml-25  font-semibold	">
              <p>Smartphone</p>

@@ -6,6 +6,7 @@ import MapProduct from './MapProduct'
 import {BrowserRouter ,Link,Route,Switch} from 'react-router-dom'
 import AchatCommande from './AchatCommande'
 import  MapProduct02 from './MapProduct02'
+import AppBar from '@material-ui/core/AppBar';
 
 const AdminDashBoard01 = () => {
     const dispatch = useDispatch()
@@ -17,10 +18,11 @@ const AdminDashBoard01 = () => {
      
         <div className="DisplayFLexBoxAdmin">
               <BrowserRouter>
-           <div className="Servidce static	">
+              <AppBar style={{backgroundColor:"#1F2649",width:"150px"}} position="sticky">
+
          <Link to="/Admin/dashboard"> <p> Product</p></Link> 
        
-           </div>
+           </AppBar>
            <div className="NavBarAdmin">
            <Route exact path="/Admin/dashboard" render={()=><MapProduct/>}></Route>
            <Route exact path="/Admin/dashboard/user" render={()=><AchatCommande/>}></Route>

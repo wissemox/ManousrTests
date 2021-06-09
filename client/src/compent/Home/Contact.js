@@ -38,15 +38,15 @@ const Contact = () => {
                     <Box boxShadow={5} style={{backgroundColor:"#FFFFFF",width:"800px" , height:"400px",marginLeft:"15%" ,paddingLeft:"20%" , paddingTop:"5%"}} className="ml-90 ">
                     <div className="flex mb-10">
                     <ContactMailIcon style={{color:"#1F2649" ,fontSize:"50px"}}/> 
-                    <p className="pl-10 pt-2">Your mail here</p>
+                    <p className="pl-10 pt-2">bigsat102@bigsat.com.tn</p>
                     </div>
                     <div className="flex mb-10">
                         <PhonelinkRingIcon style={{color:"#1F2649" ,fontSize:"50px"}}/>
-                        <p className="pl-10 pt-2">your phone here</p>
+                        <p className="pl-10 pt-2">71701002</p>
                     </div>
                     <div className="flex">
                         <BusinessIcon style={{color:"#1F2649" ,fontSize:"50px"}}/> 
-                        <p className="pl-10 pt-2">Addres hre</p>
+                        <p className="pl-10 pt-2">4 av al anouar</p>
                     </div>
                     </Box>
                    

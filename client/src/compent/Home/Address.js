@@ -10,7 +10,7 @@ const Address = () => {
       
     return (
         <div data-Aos="fade" className="border-b pl-10 mt-4 color-blue">
-            <p>Appele nous Numere Telephone : Votre numere</p>
+            <p>Appele nous Numere Telephone : 71701002</p>
         </div>
     )
 }
