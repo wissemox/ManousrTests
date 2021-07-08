@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+  "engines": {
+    "node": "14.17.0" ,
+    "npm":"7.15.0"
+  },  "scripts": {
     "start": "node server.js",
     "client": "npm start --prefix client",
+    "build":"cd client && npm run build ",
+    "install-client":"cd client && npm install",
+    "heroku-postbuild":"npm run install-client && npm run build ",
     "server": "nodemon server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\" "
   },
