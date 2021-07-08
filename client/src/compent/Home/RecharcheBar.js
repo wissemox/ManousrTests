@@ -22,10 +22,8 @@ const RecharcheBar = () => {
     return (
         <>
     <Box className="flex mt-3 mb-3 ml-20p ">
-        
-            <Box className="mt-1 mr-10">
-           <img className="w-45 h-30  " src="Linkdin.png"/>
-           </Box>
+
+
      
            <Box>
            <Input className="w-600" value={ReserchBar} onChange={(e)=>setReserchBar(e.target.value)}/>
@@ -44,6 +42,8 @@ const RecharcheBar = () => {
                <Box data-Aos="fade"  className="mb-2 mt-2" >  
                 </Box>
                 <Box data-Aos="fade"   className="mb-2 mt-2 pl-10 flex"> 
+                <img style={{width:"80px" , marginRight:"50px"}} src={process.env.PUBLIC_URL +`/uploads/${el.Image}` }/>
+
                 <p  data-Aos="fade-left"  style={{width:"150px"}} >{el.Name}</p>
                 <p data-Aos="fade-left" style={{width:"100px"}} className="pl-20" >{el.Prix}</p>
                 <p data-Aos="fade-left" style={{width:"100px"}} className="pl-20">{el.Catgory}</p>
